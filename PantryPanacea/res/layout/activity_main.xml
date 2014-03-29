@@ -9,10 +9,11 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/enterIngredientsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/enter_ingredients_link" />
+            android:text="@string/enter_ingredients_link"
+            android:onClick="enterIngredients" />
 
     </TableRow>
 
@@ -22,10 +23,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/searchRecipeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/search_recpie" />
+            android:text="@string/search_recipe" 
+            android:onClick="searchRecipe"/>
 
     </TableRow>
 
@@ -35,10 +37,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/viewIngredientsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/view_ingreidents" />
+            android:text="@string/view_ingreidents"
+            android:onClick="viewIngredients" />
 
     </TableRow>
 
@@ -48,10 +51,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/viewRecipeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/previously_used_recpies" />
+            android:text="@string/previously_used_recipes"
+            android:onClick="viewRecipe" />
 
     </TableRow>
 
