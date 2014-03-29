@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PantryPanacea</string>
+    <string name="ingredients">Enter Ingredient</string>
+    <string name="enter_ingredients_link">Enter Ingredients</string>
+    <string name="search_recpie">Search for Recipe</string>
+    <string name="view_ingreidents">View and Edit Ingreidents</string>
+	  <string name="previously_used_recpies">View Previously Used Recpies</string>
+	  <string name="select_all">Select All</string>
+  	<string name="deselect_all">Deselect All</string>
+</resources>
