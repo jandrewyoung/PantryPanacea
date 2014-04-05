@@ -1,61 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
 
     <TableRow
         android:id="@+id/tableRow1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="30dp" >
 
         <Button
-            android:id="@+id/enterIngredientsButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/button1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/enter_ingredients_link"
-            android:onClick="enterIngredients" />
+            android:background="#DDBDBDBD"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/enter_ingredients_link" />
 
     </TableRow>
-
+    
     <TableRow
         android:id="@+id/tableRow2"
+        android:layout_height="100dp"
+        android:paddingTop="30dp" >
+
+     </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center" >
 
         <Button
-            android:id="@+id/searchRecipeButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/button2"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/search_recipe" 
-            android:onClick="searchRecipe"/>
+            android:background="#DDBDBDBD"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/search_recpie" />
 
     </TableRow>
+    
+     <TableRow
+         android:id="@+id/tableRow6"
+         android:paddingTop="30dp" >
 
+     </TableRow>
+    
     <TableRow
         android:id="@+id/tableRow3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center" >
 
         <Button
-            android:id="@+id/viewIngredientsButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/button3"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/view_ingreidents"
-            android:onClick="viewIngredients" />
+            android:background="#DDBDBDBD"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/view_ingreidents" />
 
     </TableRow>
+    
+     <TableRow
+         android:id="@+id/tableRow7"
+         android:paddingTop="30dp" >
+
+     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center" >
 
         <Button
-            android:id="@+id/viewRecipeButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/button4"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/previously_used_recipes"
-            android:onClick="viewRecipe" />
+            android:background="#DDBDBDBD"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/previously_used_recpies" />
 
     </TableRow>
 
