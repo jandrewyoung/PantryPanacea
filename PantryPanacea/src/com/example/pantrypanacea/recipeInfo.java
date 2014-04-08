@@ -1,7 +1,7 @@
 // ****************************************************************************
 // * Module Name: recipeInfo                                                  *
 // * Description: sets up the schema for the recipeInfo table                 *
-// * Date Created: March 30, 2014                                             *
+// * Date Created: April 8, 2014                                              *
 // * Author: Daniel Hoekman                                                   *
 // ****************************************************************************
 
@@ -14,6 +14,8 @@ public class recipeInfo
 	String RecipeName;
 	String RecipeServings;
 	String RecipeCategory;
+	int RecipeUseCount;
+	int RecipeFavorite;
 	
 	//
 	// constructors
@@ -70,6 +72,46 @@ public class recipeInfo
 		this.RecipeCategory = RecipeCategory;
 	}
 	
+	// constructor with name, servings, category, and use count
+	public recipeInfo(String RecipeName, String RecipeServings, String RecipeCategory, int RecipeUseCount)
+	{
+		this.RecipeName = RecipeName;
+		this.RecipeServings = RecipeServings;
+		this.RecipeCategory = RecipeCategory;
+		this.RecipeUseCount = RecipeUseCount;
+	}
+	
+	// constructor with ID, name, servings, category, and use count
+	public recipeInfo(int _id, String RecipeName, String RecipeServings, String RecipeCategory, int RecipeUseCount)
+	{
+		this._id = _id;
+		this.RecipeName = RecipeName;
+		this.RecipeServings = RecipeServings;
+		this.RecipeCategory = RecipeCategory;
+		this.RecipeUseCount = RecipeUseCount;
+	}
+	
+	// constructor with name, servings, category, use count, and favorite status
+	public recipeInfo(String RecipeName, String RecipeServings, String RecipeCategory, int RecipeUseCount, int RecipeFavorite)
+	{
+		this.RecipeName = RecipeName;
+		this.RecipeServings = RecipeServings;
+		this.RecipeCategory = RecipeCategory;
+		this.RecipeUseCount = RecipeUseCount;
+		this.RecipeFavorite = RecipeFavorite;
+	}
+	
+	// constructor with ID, name, servings, category, use count, and favorite status
+	public recipeInfo(int _id, String RecipeName, String RecipeServings, String RecipeCategory, int RecipeUseCount, int RecipeFavorite)
+	{
+		this._id = _id;
+		this.RecipeName = RecipeName;
+		this.RecipeServings = RecipeServings;
+		this.RecipeCategory = RecipeCategory;
+		this.RecipeUseCount = RecipeUseCount;
+		this.RecipeFavorite = RecipeFavorite;
+	}
+	
 	//
 	// getters
 	//
@@ -98,6 +140,18 @@ public class recipeInfo
 		return this.RecipeCategory;
 	}
 	
+	// getter for use count
+	public int getRecipeUseCount()
+	{
+		return this.RecipeUseCount;
+	}
+	
+	// getter for favorite status
+	public int getRecipeFavorite()
+	{
+		return this.RecipeFavorite;
+	}
+	
 	//
 	// setters
 	//
@@ -124,5 +178,17 @@ public class recipeInfo
 	public void setRecipeCategory(String RecipeCategory)
 	{
 		this.RecipeCategory = RecipeCategory;
+	}
+	
+	// setter for use count
+	public void setRecipeUseCount(int RecipeUseCount)
+	{
+		this.RecipeUseCount = RecipeUseCount;
+	}
+	
+	// setter for favorite status
+	public void setRecipeFavorite(int RecipeFavorite)
+	{
+		this.RecipeFavorite = RecipeFavorite;
 	}
 }
