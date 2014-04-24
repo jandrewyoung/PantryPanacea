@@ -12,7 +12,7 @@
         android:paddingTop="30dp" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/submitButton"
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,7 +20,8 @@
             android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/enter_ingredients_link" />
+            android:text="@string/enter_ingredients_link" 
+            android:onClick = "enterIng"/>
 
     </TableRow>
     
@@ -45,7 +46,8 @@
             android:background="#DDBDBDBD"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/search_recpie" />
+            android:text="@string/search_recpie"
+            android:onClick="recSearch" />
 
     </TableRow>
     
@@ -69,7 +71,8 @@
             android:background="#DDBDBDBD"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/view_ingreidents" />
+            android:text="@string/view_ingreidents" 
+            android:onClick="viewIng"/>
 
     </TableRow>
     
@@ -93,7 +96,8 @@
             android:background="#DDBDBDBD"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/previously_used_recpies" />
+            android:text="@string/previously_used_recpies"
+            android:onClick="viewPrev" />
 
     </TableRow>
 

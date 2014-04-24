@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="18" />
 
     <application
@@ -22,6 +22,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+        android:name="EnterIngredientsActivity"
+        android:label="Enter an Ingredient"
+        android:parentActivityName="pantrypanacea.MainActivity.java">
+        </activity>
+        <activity
+        android:name="SearchRecipeActivity"
+        android:label="Search for a Recipe"
+        android:parentActivityName="pantrypanacea.MainActivity.java">
+        </activity>
+        <activity
+        android:name="ViewIngredientsActivity"
+        android:label="View and Edit Your Ingredients"
+        android:parentActivityName="pantrypanacea.MainActivity.java">
+        </activity>
+        <activity
+        android:name="ViewRecipeActivity"
+        android:label="Your Current Recipe"
+        android:parentActivityName="pantrypanacea.MainActivity.java">
+        </activity>
+        <activity
+        android:name="ViewRecipeList"
+        android:label="Select a Recipe"
+        android:parentActivityName="pantrypanacea.MainActivity.java">
+        </activity>
+        <activity
+        android:name="ViewPrevActivity"
+        android:label="View Previously Used Recipes"
+        android:parentActivityName="pantrypanacea.MainActivity.java">
+        </activity>
+        <activity
+        android:name="PrevRecipe"
+        android:label="View Previously Used Recipes"
+        android:parentActivityName="pantrypanacea.MainActivity.java">
+        </activity>
+        </application>
 
 </manifest>

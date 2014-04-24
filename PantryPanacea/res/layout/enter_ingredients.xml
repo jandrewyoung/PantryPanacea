@@ -5,46 +5,125 @@
     android:background="@drawable/bg" >
 
     <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="2"
         android:gravity="center" >
 
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="@string/ingredients" 
+        <Spinner
+            android:id="@+id/catSpin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:prompt = "@string/catSpin"
             android:background="#BDBDBD"
-            android:gravity="center">
-
-      
-        </AutoCompleteTextView>
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+        	android:layout_marginRight="8dp" />
 
     </TableRow>
-    
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+        
+        <Spinner
+            android:id="@+id/ingSpin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:prompt = "@string/ingSpin"
+            android:background="#BDBDBD"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+        	android:layout_marginRight="8dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+    </TableRow>
+
     <TableRow
         android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <Spinner
+            android:id="@+id/unitSpin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:prompt = "@string/unitSpin"
+            android:background="#BDBDBD"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+        	android:layout_marginRight="8dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="10dp"  >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="10dp" >
+        android:layout_weight="2" >
+
+        <EditText
+            android:id="@+id/amountText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#DDBDBDBD"            
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Enter Amount as Whole Number or Fraction" >
+
+            <requestFocus />
+        </EditText>
 
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow2"
+        android:id="@+id/tableRow8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
-       android:gravity="center" >
+        android:paddingTop="10dp" >
+    </TableRow>
 
-        <ListView
-            android:id="@+id/listView1"
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="2" >
+
+        <Button
+            android:id="@+id/submitButton"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#DDBDBDBD" >
-        </ListView>
+            android:background="#DDBDBDBD"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Add Ingredient" />
 
     </TableRow>
 

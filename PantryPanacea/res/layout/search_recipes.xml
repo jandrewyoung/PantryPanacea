@@ -6,51 +6,56 @@
     
     <TableRow
         android:id="@+id/tableRow1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-        android:gravity="center">
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
+            android:id="@+id/selectbutton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
             android:background="#DDBDBDBD"
-            android:padding="10dp"
             android:text="@string/select_all" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/deselectbutton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
             android:background="#DDBDBDBD"
-            android:padding="10dp"
             android:text="@string/deselect_all" />
+
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#DDBDBDBD"
+            android:text="@string/submit" />
 
     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow2"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="#DDBDBDBD" >
-        
-        <CheckBox
-            android:id="@+id/check"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:focusable="false"
-            android:text="" >
+        android:background="#DDBDBDBD"
+        android:gravity="center" >
 
-   		</CheckBox>
-        
-        <TextView
-            android:id="@+id/label"
-            android:layout_width="0dp"
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="4" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" >
+
+        </ListView>
     
     </TableRow>
 

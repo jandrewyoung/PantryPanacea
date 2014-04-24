@@ -5,9 +5,12 @@
 // * Author: Daniel Hoekman                                                   *
 // ****************************************************************************
 
-package pantrypanacea;
+package com.example.pantrypanacea;
 
-public class userCustomIngredients
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class userCustomIngredients implements Parcelable
 {
 	// table schema
 	int _id;
@@ -15,6 +18,7 @@ public class userCustomIngredients
 	String IngredientCategory;
 	String IngredientQuantity;
 	String IngredientBaseUnit;
+	boolean selected;
 	
 	//
 	// constructors
@@ -23,6 +27,7 @@ public class userCustomIngredients
 	// constructor with no variables
 	public userCustomIngredients()
 	{
+		selected = false;
 	
 	}
 	
@@ -30,6 +35,7 @@ public class userCustomIngredients
 	public userCustomIngredients(String IngredientName)
 	{
 		this.IngredientName = IngredientName;
+		selected = false;
 	}
 	
 	// constructor with ID and name
@@ -37,6 +43,7 @@ public class userCustomIngredients
 	{
 		this._id = _id;
 		this.IngredientName = IngredientName;
+		selected = false;
 	}
 	
 	// constructor with name, category, quantity, and base unit
@@ -46,6 +53,7 @@ public class userCustomIngredients
 		this.IngredientCategory = IngredientCategory;
 		this.IngredientQuantity = IngredientQuantity;
 		this.IngredientBaseUnit = IngredientBaseUnit;
+		selected = false;
 	}
 	
 	// constructor with ID, name, category, quantity, and base unit
@@ -56,6 +64,7 @@ public class userCustomIngredients
 		this.IngredientCategory = IngredientCategory;
 		this.IngredientQuantity = IngredientQuantity;
 		this.IngredientBaseUnit = IngredientBaseUnit;
+		selected = false;
 	}
 	
 	//
@@ -63,6 +72,14 @@ public class userCustomIngredients
 	//
 	
 	// getter for ID
+	public boolean getSelected(){
+		return selected;
+	}
+	
+	public void setSelected(boolean selected){
+		this.selected = selected;
+	}
+	
 	public int get_id()
 	{
 		return this._id;
@@ -125,4 +142,39 @@ public class userCustomIngredients
 	{
 		this.IngredientBaseUnit = IngredientBaseUnit;
 	}
+
+	public userCustomIngredients(Parcel in){
+		_id = in.readInt();
+		IngredientName = in.readString();
+		IngredientCategory = in.readString();
+		IngredientQuantity = in.readString();
+		IngredientBaseUnit = in.readString();
+	}
+	
+	@Override
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		dest.writeInt(_id);
+		dest.writeString(IngredientName);
+		dest.writeString(IngredientCategory);
+		dest.writeString(IngredientQuantity);
+		dest.writeString(IngredientBaseUnit);
+	}
+	
+    public static final Parcelable.Creator<userCustomIngredients> CREATOR = new Parcelable.Creator<userCustomIngredients>()
+    {
+        public userCustomIngredients createFromParcel(Parcel in)
+        {
+            return new userCustomIngredients(in);
+        }
+        public userCustomIngredients[] newArray(int size)
+        {
+            return new userCustomIngredients[size];
+        }
+    };
 }

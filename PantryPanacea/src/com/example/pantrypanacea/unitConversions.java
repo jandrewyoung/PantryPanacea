@@ -5,7 +5,7 @@
 // * Author: Daniel Hoekman                                                   *
 // ****************************************************************************
 
-package pantrypanacea;
+package com.example.pantrypanacea;
 
 public class unitConversions
 {
